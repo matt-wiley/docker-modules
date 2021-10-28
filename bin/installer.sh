@@ -19,7 +19,7 @@ function dockerModuleInstaller {
             banner "Downloading module scripts"
             for moduleName in "$@"; do 
                 echo -n "Downloading module '${moduleName}' ... "
-                curl -sSL "https://raw.githubusercontent.com/matt-wiley/docker-modules/main/modules/${moduleName}.sh"
+                curl -sSL "https://raw.githubusercontent.com/matt-wiley/docker-modules/main/modules/${moduleName}.sh" -o "${moduleName}"
                 echo "done."
             done
             cd ../
