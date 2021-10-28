@@ -4,7 +4,7 @@ function dockerModuleInstaller {
 
     function banner {
         # Helper function to pretty print banner messages in build log
-        printf " # \n # ${1}\n # \n"
+        printf " # \n # ${1}\n # \n\n"
     }
 
     case "${1}" in 
