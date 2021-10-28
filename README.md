@@ -45,3 +45,8 @@ drh -v /var/run/docker.sock:/var/run/docker.sock modular-docker/modtest bash
 
 In other words, Docker-in-Docker.
 
+The key part here is that all but one line is boilerplate. The line where `docker-cli` is declared tells the rest of the code what should be installed on this image.
+
+If a script by that name (with the `.sh` extension) exists in the `/modules` directory in the repo. The script will be downloaded and installed as part of the surround Dockerfile definition. 
+
+
