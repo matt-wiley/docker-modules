@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Script created following the Ubuntu Server install documentation.
-#   Read more here: https://docs.docker.com/engine/install/ubuntu/
 
 # TODO: Setup version handling for Node JS Module
 
