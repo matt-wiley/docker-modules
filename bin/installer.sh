@@ -31,8 +31,8 @@ function dockerModuleInstaller {
                 banner "Running install for ${module}"
                 "./${module}" install
             done 
-
-        *) ;;
+            ;;
+        *)  ;;
 
     esac 
 
