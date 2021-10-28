@@ -22,6 +22,7 @@ function dockerModuleInstaller {
                 curl -sSL "https://raw.githubusercontent.com/matt-wiley/docker-modules/main/modules/${moduleName}.sh" -o "${moduleName}"
                 echo "done."
             done
+            chmod +x ./*
             cd ../
             ;;
 
